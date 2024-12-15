@@ -1,4 +1,4 @@
-# Проект по сегментации трещин в бетоне
+# Сегментация трещин в бетоне
 
 <p align="center">
   <img src="https://cdn.datasetninja.com/previews/q/ext:jpeg/resize:fill:400:0:0/q:70/plain/supervisely-supervisely-assets-public/images/original/y/6/eY/ZkOiwekRPuAKOcKgjBD8gIfJjiOkgkkwiHspoxjxPeFWGZiOhrg5pHu3dt5MWADI2Vhns6uiKuAR0kOcY1VL69lwnVq0sJBxZadji9GvSIJhh2PT61ee2ZdmUDeR.jpg" alt="Оригинальное изображение" width="350">
@@ -27,7 +27,7 @@
 * **Ссылка:** [Описание](https://datasetninja.com/concrete-crack-segmentation-dataset#introduction) | [Ссылка на скачивание](https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/jwsn7tfbrp-1.zip)
 * **Описание:**  Данный датасет содержит 458 изображений высокого разрешения бетонных поверхностей с соответствующими бинарными масками, где белые пиксели представляют трещины, а черные - фон. Изображения были сняты в различных зданиях на территории Ближневосточного Технического Университета (Middle East Technical University).
 * **Размер:** 458 изображений
-* **Классы:** Два класса: трещина и фон.
+* **Классы:** Два класса - трещина и фон.
 * **Тип аннотаций:**  Pixel-level semantic segmentation masks (бинарные маски).
 
 **Особенности данных:**
