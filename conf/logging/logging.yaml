@@ -1,0 +1,4 @@
+experiment_name: crack_segm
+run_name: unet-model-exp
+mlflow_save_dir: "."
+tracking_uri: http://127.0.0.1:5002

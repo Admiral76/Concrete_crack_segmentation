@@ -1,0 +1,12 @@
+model_name: unet
+
+encoder_name: resnet34
+encoder_weights: imagenet
+in_channels: 1
+classes: 1
+
+image_size: 256
+image_mean: [0.5]
+image_std: [0.5]
+
+model_local_path: models
