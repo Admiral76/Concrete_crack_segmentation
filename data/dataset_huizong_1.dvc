@@ -1,0 +1,6 @@
+outs:
+- md5: c7791ed873e96b208a0cc3d0e35d9536.dir
+  size: 2593297079
+  nfiles: 2462
+  hash: md5
+  path: dataset_huizong_1
