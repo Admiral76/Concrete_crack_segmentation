@@ -1,5 +1,6 @@
 import albumentations as A
 import hydra
+import mlflow
 import pytorch_lightning as pl
 import torchvision.transforms as T
 from omegaconf import DictConfig
@@ -25,7 +26,8 @@ def main(config: DictConfig) -> None:
         4. Инициализирует модель и Lightning модуль.
         5. Настраивает callback для сохранения чекпоинтов.
         6. Настраивает логгер MLFlow.
-        7. Запускает обучение модели.
+        7. Логирует гиперпараметры и версию кода.
+        8. Запускает обучение модели.
     """
 
     model_conf = config["model"]
@@ -103,6 +105,15 @@ def main(config: DictConfig) -> None:
         logger=logger,
         callbacks=[checkpoint_callback],
     )
+
+    with mlflow.start_run(run_id=logger.run_id):
+        mlflow.log_artifacts("utils")
+        mlflow.log_artifact("train.py")
+
+        mlflow.log_param("batch_size", training_conf["batch_size"])
+        mlflow.log_param("lr", training_conf["lr"])
+        mlflow.log_param("num_epochs", training_conf["num_epochs"])
+        mlflow.log_param("num_workers", training_conf["num_workers"])
 
     trainer.fit(module, train_dataloader, val_dataloader)
 
