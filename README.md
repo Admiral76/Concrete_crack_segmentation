@@ -1,8 +1,7 @@
 # Сегментация трещин в бетоне
 
 <p align="center">
-  <img src="https://cdn.datasetninja.com/previews/q/ext:jpeg/resize:fill:400:0:0/q:70/plain/supervisely-supervisely-assets-public/images/original/y/6/eY/ZkOiwekRPuAKOcKgjBD8gIfJjiOkgkkwiHspoxjxPeFWGZiOhrg5pHu3dt5MWADI2Vhns6uiKuAR0kOcY1VL69lwnVq0sJBxZadji9GvSIJhh2PT61ee2ZdmUDeR.jpg" alt="Оригинальное изображение" width="350">
-  <img src="https://cdn.datasetninja.com/masks?project_id=1837&image_id=2597610" alt="Маска" width="350">
+  <img src="https://www.frontiersin.org/files/Articles/1058407/fmats-09-1058407-HTML-r1/image_m/fmats-09-1058407-g006.jpg" alt="" width="750">
 </p>
 
 ## 1. Описание проекта
